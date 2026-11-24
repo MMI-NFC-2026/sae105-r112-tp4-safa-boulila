@@ -1,3 +1,31 @@
 /**
 * Accordeon
+
 */
+.accordeon {
+    display: flex;
+    gap: 1rem;
+}
+details{
+    width: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+details[open]{
+    width: 450px;
+}
+details[open] > div{
+    display: block;
+}
+.contenu__text{
+    display: none;
+}
+details[open]{
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 100px;
+    display: block;
+}
